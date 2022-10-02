@@ -57,7 +57,7 @@ def roll_the_string(s: str, roll: list) -> str: # BigO(n * m) time | BigO(1) spa
     for depth in roll: # loop through our roll
         for i in range(depth): # loop through our str for each roll
             idx = letters.index(s[i]) + 1 # get the index of the letter and add 1 to it
-            if idx >= 26: # if our new idx is 26 or higher, which means we need to move our idx to the beginning of letters
+            if idx >= 26: # if our new idx is 26 or higher, we need to move our idx to the beginning of letters
                 idx = 0 # we set idx to 0 to move it to the beginning.
             s[i] = letters[idx] # after we get the new idx, we reassign our current letter to the new letter at idx
             
